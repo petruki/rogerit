@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Roger's Portfolio";
+  showcase = '';
+
+  setShowcase(value: string) {
+    this.showcase = value;
+  }
 }

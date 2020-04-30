@@ -22,18 +22,6 @@ body {
   display: inline-flex;
 }
 
-.background-image {
-  background-image: url("./assets/background.jpg");
-}
-
-.background-size-cover {
-  background-size: cover;
-}
-
-.background-position-center {
-  background-position: center;
-}
-
 .flex-wrap-wrap {
   flex-wrap: wrap;
 }

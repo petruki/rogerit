@@ -27,14 +27,73 @@
    </symbol>
 </svg>
 
-<aside class="
+<aside *ngIf="showcase === ''" class="
   position-relative
   height-15
   height-100-large
+  flex-grow-1-large
   background-image
   background-position-center
-  background-size-cover
+  background-size-cover">
+</aside>
+
+<aside *ngIf="showcase === 'music'" class="
+  position-relative
+  height-15
+  height-100-large
   flex-grow-1-large">
+  <div class="
+    background-image blured
+    background-position-center
+    background-size-cover"></div>
+    <div class="bg-text">
+      <iframe class="music-player large" 
+        src="https://bandcamp.com/EmbeddedPlayer/album=4143191707/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
+        <a href="http://rogeriopetruki.bandcamp.com/album/empty-revisited">Empty (revisited) by Rogerio Petruki</a>
+      </iframe>
+      <iframe class="music-player small" 
+        src="https://bandcamp.com/EmbeddedPlayer/album=4143191707/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/" seamless>
+        <a href="http://rogeriopetruki.bandcamp.com/album/empty-revisited">Empty (revisited) by Rogerio Petruki</a>
+      </iframe>
+  </div>
+</aside>
+
+<aside *ngIf="showcase === 'founder'" class="
+  position-relative
+  height-15
+  height-100-large
+  flex-grow-1-large">
+  <div class="
+    background-image blured
+    background-position-center
+    background-size-cover"></div>
+    <div class="bg-text">
+      <img class="switcher-logo" src="../assets/switcherapi_transparency_white.png" />
+  </div>
+</aside>
+
+<aside *ngIf="showcase === 'stack'" class="
+  position-relative
+  height-15
+  height-100-large
+  flex-grow-1-large">
+  <div class="
+    background-image blured
+    background-position-center
+    background-size-cover"></div>
+    <div class="bg-text">
+      <img class="stack-logo" src="../assets/javascript.png" />
+      <img class="stack-logo" src="../assets/typescript.png" />
+      <img class="stack-logo" src="../assets/deno.png" />
+      <img class="stack-logo" src="../assets/nodejs2.png" />
+      <img class="stack-logo" src="../assets/java.png" />
+      <img class="stack-logo" src="../assets/spring.png" />
+      <img class="stack-logo" src="../assets/oracle.png" />
+      <img class="stack-logo" src="../assets/angular.png" />
+      <img class="stack-logo" src="../assets/mongodb.png" />
+      <img class="stack-logo" src="../assets/git.png" />
+      <img class="stack-logo" src="../assets/atlassia.png" />
+  </div>
 </aside>
 
 <section class="
@@ -62,7 +121,8 @@
           margin-bottom-24
           font-size-42
           font-weight-300
-          color-5A5C5B">
+          color-5A5C5B
+          cursor-pointer" (click)="setShowcase('')">
           Roger Floriano
       </h1>
       <h2 class="
@@ -101,8 +161,10 @@
           margin-bottom-42
           font-size-16
           color-383D3B">
-        Friendly, enthusiastic, and upbeat Full-stack Developer with more than 10 years of experience in the field, a
-        Project Founder, and a professional dabbler at Music Production.
+        Friendly, enthusiastic, and upbeat 
+        <a class="showcase-link cursor-pointer" (click)="setShowcase('stack')">Full-stack Developer</a> with more than 10 years of experience in the field, a
+        <a class="showcase-link cursor-pointer" (click)="setShowcase('founder')">Project Founder</a>, and self-taught 
+        <a class="showcase-link cursor-pointer" (click)="setShowcase('music')">Music Productor</a>.
       </p>
       <div class="
         display-flex

@@ -111,6 +111,20 @@
   padding: 10px;
 }
 
+.roger-logo {
+  width: 90%;
+  padding: 10px;
+  opacity: 0.8
+}
+
+.avatar-logo {
+  width: 120px;
+  margin-left: 20px;
+  border-radius: 100px;
+  height: min-content;
+  margin: auto;
+}
+
 .spacer {
   display: inherit;
   width: 100%;

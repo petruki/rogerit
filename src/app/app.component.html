@@ -115,20 +115,23 @@
       margin-right-auto
       margin-left-auto
       padding-48
-      padding-5-large">
+      padding-5-large" style="overflow-y: scroll;">
     <div class="
         margin-right-auto
         margin-left-auto
         height-100-large">
 
-      <h1 class="
-          margin-bottom-24
-          font-size-42
-          font-weight-300
-          color-5A5C5B
-          cursor-pointer" (click)="setShowcase('')">
-          Roger Floriano
-      </h1>
+      <div style="display: flex;">
+        <h1 class="
+            margin-bottom-24
+            font-size-42
+            font-weight-300
+            color-5A5C5B
+            cursor-pointer" style="margin: revert;" (click)="setShowcase('')">
+            Roger Floriano
+        </h1>
+        <img class="avatar-logo" src="assets\avatar.png" alt="Rogerio Petruki"/>
+      </div>
       <h2 class="
           margin-bottom-14
           font-size-16
@@ -198,6 +201,16 @@
           </svg>Contact
         </a>
       </div>
+      <div class="bg-detail" *ngIf="showcase === ''" >
+        <div class="spacer"></div>
+        <br>
+        <p class="
+          font-size-16
+          color-383D3B">
+          <i>"If you always put limit on everything you do, physical or anything else, it will spread into your work and into your life. 
+          <br><strong>There are no LIMITS</strong>. There are only plateaus, and you must not stay there, you must go beyond them."</i> - Bruce Lee
+        </p>
+      </div>
       <div class="bg-detail" *ngIf="showcase === 'stack'" >
         <div class="spacer"></div>
         <p class="
@@ -242,6 +255,7 @@
         <a href="https://play.google.com/music/preview/Ax37ys45zzwy6nhmhdrnofoty54?play=1&u=0" target="blank">
           <img class="stack-logo" src="assets\googleplay.png" title="Google Play" alt="Google Play"/>
         </a>
+        <img class="roger-logo" src="assets\roger.png" alt="Rogerio Petruki"/>
       </div>
       <div class="bg-detail" *ngIf="showcase === 'founder'" >
         <div class="spacer"></div>

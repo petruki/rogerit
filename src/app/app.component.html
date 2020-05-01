@@ -46,7 +46,7 @@
     background-image blured
     background-position-center
     background-size-cover"></div>
-    <div class="bg-text">
+    <div class="bg-text borderless">
       <iframe class="music-player large" 
         src="https://bandcamp.com/EmbeddedPlayer/album=4143191707/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
         <a href="http://rogeriopetruki.bandcamp.com/album/empty-revisited">Empty (revisited) by Rogerio Petruki</a>
@@ -84,17 +84,18 @@
     background-position-center
     background-size-cover"></div>
     <div class="bg-text">
-      <img class="stack-logo" src="assets\javascript.png" />
-      <img class="stack-logo" src="assets\typescript.png" />
-      <img class="stack-logo" src="assets\deno.png" />
-      <img class="stack-logo" src="assets\nodejs2.png" />
-      <img class="stack-logo" src="assets\java.png" />
-      <img class="stack-logo" src="assets\spring.png" />
-      <img class="stack-logo" src="assets\oracle.png" />
-      <img class="stack-logo" src="assets\angular.png" />
-      <img class="stack-logo" src="assets\mongodb.png" />
-      <img class="stack-logo" src="assets\git.png" />
-      <img class="stack-logo" src="assets\atlassia.png" />
+      <img class="stack-logo stack-hide" src="assets\javascript.png" title="JavaScript" alt="JavaScript"/>
+      <img class="stack-logo stack-hide" src="assets\typescript.png" title="TypeScript" alt="TypeScript"/>
+      <img class="stack-logo stack-hide" src="assets\deno.png" title="Deno" alt="Deno"/>
+      <img class="stack-logo stack-hide" src="assets\nodejs2.png" title="NodeJS" alt="NodeJS"/>
+      <img class="stack-logo stack-hide" src="assets\java.png" title="Java" alt="Java"/>
+      <img class="stack-logo stack-hide" src="assets\spring.png" title="Spring Framework" alt="Spring Framework"/>
+      <img class="stack-logo stack-hide" src="assets\oracle.png" title="Oracle DB/WebLogic" alt="Oracle DB/WebLogic"/>
+      <img class="stack-logo stack-hide" src="assets\angular.png" title="Angular 9" alt="Angular 9"/>
+      <img class="stack-logo stack-hide" src="assets\mongodb.png" title="MongoDB" alt="MongoDB"/>
+      <img class="stack-logo stack-hide" src="assets\git.png" title="Git" alt="Git"/>
+      <img class="stack-logo stack-hide" src="assets\atlassia.png" title="JIRA" alt="JIRA"/>
+      <img class="stack-logo" src="assets\fullstack.svg" title="Full-stack Developer" alt="ull-stack Developer"/>
   </div>
 </aside>
 
@@ -117,7 +118,8 @@
       padding-5-large">
     <div class="
         margin-right-auto
-        margin-left-auto">
+        margin-left-auto
+        height-100-large">
 
       <h1 class="
           margin-bottom-24
@@ -195,6 +197,72 @@
             <use xlink:href="#chat-bubble"></use>
           </svg>Contact
         </a>
+      </div>
+      <div class="bg-detail" *ngIf="showcase === 'stack'" >
+        <div class="spacer"></div>
+        <p class="
+          font-size-16
+          color-383D3B">
+          These are some of the technologies I have been using on my favorite recipes.
+        </p>
+        <ul>
+          <li>Java 8</li>
+          <li>Spring Framework</li>
+          <li>Oracle DB/WebLogic</li>
+          <li>MongoDB</li>
+          <li>JavaScript</li>
+          <li>TypeScript</li>
+          <li>NodeJS</li>
+          <li>Angular 9</li>
+          <li>Git</li>
+          <li>Atlassian JIRA</li>
+        </ul> 
+      </div>
+      <div class="bg-detail" *ngIf="showcase === 'music'" >
+        <div class="spacer"></div>
+        <p class="
+          font-size-16
+          color-383D3B">
+          2018 – Released an EP called “Empty” under my label <br>℗ Rogerio Petruki
+        </p>
+        <p class="
+          font-size-16
+          color-383D3B">
+          Available on all famous music streaming platforms
+        </p>
+        <a href="https://open.spotify.com/artist/2LAHfYmSqQwPnelXU2hzvu" target="blank">
+          <img class="stack-logo" src="assets\spotify.png" title="Spotify" alt="Spotify"/>
+        </a>
+        <a href="https://music.apple.com/us/artist/rogerio-petruki/1409809663" target="blank">
+          <img class="stack-logo" src="assets\itunes.png" title="iTunes" alt="iTunes"/>
+        </a>
+        <a href="https://music.amazon.com/albums/B0823CKZCQ" target="blank">
+          <img class="stack-logo" src="assets\amazon_music.png" title="Amazon Music" alt="Amazon Music"/>
+        </a>
+        <a href="https://play.google.com/music/preview/Ax37ys45zzwy6nhmhdrnofoty54?play=1&u=0" target="blank">
+          <img class="stack-logo" src="assets\googleplay.png" title="Google Play" alt="Google Play"/>
+        </a>
+      </div>
+      <div class="bg-detail" *ngIf="showcase === 'founder'" >
+        <div class="spacer"></div>
+        <img class="stack-logo" src="assets\switcher_mark_grey_shadow.png"  alt="Switcher API"/>
+        <p class="
+          font-size-16
+          color-383D3B">
+          Switching fast.
+          Adapt everywhere.
+          <br><br>
+          Decrease the friction caused by changes while keeping control of what really matters. 
+        </p>
+        <ul>
+          <li>Cloud-based API</li>
+          <li>Cross environment</li>
+          <li>Component tracker</li>
+          <li>Collaborative</li>
+          <li>High-security flow using OAuth 2.0</li>
+          <li>Easy integration</li>
+          <li>Customizable libraries</li>
+        </ul>
       </div>
     </div>
   </div>

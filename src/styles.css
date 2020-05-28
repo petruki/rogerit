@@ -198,6 +198,10 @@ body {
   color: #FFFFFF;
 }
 
+.color-FFFFFF:hover {
+  color: rgb(0, 0, 0);
+}
+
 .color-383D3B {
   color: #383D3B;
 }
@@ -292,6 +296,15 @@ body {
 
 .transition-background-color {
   transition: background-color 200ms;
+}
+
+.scale:hover {
+  transform: scale(1.2, 1.2);
+  box-shadow: 0px 0px 10px black;
+}
+
+.scale.transition {
+  transition: all .5s cubic-bezier(0.100, 0.50, 0.30, 1);
 }
 
 @media screen and (min-width: 55rem) {
